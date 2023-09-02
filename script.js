@@ -2,8 +2,8 @@ let form = document.getElementById("form");
 let linhas = "";
 
 form.addEventListener('submit',function(e){
-    
     e.preventDefault();
+    
     adicionaLinha();
     atualizaTabela();
 })
@@ -11,8 +11,6 @@ form.addEventListener('submit',function(e){
 function adicionaLinha (){
     const nome = document.getElementById("nome");
     const telefone = document.getElementById("telefone");
-
-    numeros.push(telefone.value)
 
     let linha = "<tr>";
     linha += `<td>${nome.value}</td>`;
